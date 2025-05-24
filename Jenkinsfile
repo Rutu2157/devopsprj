@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'student-admission-site'
         CONTAINER_NAME = 'admission-site'
-        PORT_MAPPING = '8090:80'
+        PORT_MAPPING = '8091:80' // Changed from 8090 to 8091
     }
 
     stages {
@@ -32,7 +32,7 @@ pipeline {
 
     post {
         success {
-            echo "✅ Deployment successful. Visit: http://localhost:8090"
+            echo "✅ Deployment successful. Visit: http://localhost:8091"
         }
         failure {
             echo "❌ Pipeline failed. Check logs for details."
