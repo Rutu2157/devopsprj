@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Register Now</h1>
+    <form action="success.html" method="get">
+      <label>Student ID:</label>
+      <input type="text" name="id" required>
+
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+     <label>Courses:</label>
+<select name="course" multiple required>
+  <option value="BCA101">BCA101 - Computer Basics</option>
+  <option value="BCA102">BCA102 - Programming in C</option>
+  <option value="BCA103">BCA103 - Web Development</option>
+  <option value="BCA104">BCA104 - Database Management</option>
+</select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
